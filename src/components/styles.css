@@ -1,6 +1,5 @@
-/* Ensure the header has a fixed height and is styled appropriately */
 header {
-  height: 80px; /* Adjust the height as needed */
+  height: 80px;
   background-color: #444444;
   display: flex;
   align-items: center;
@@ -15,16 +14,14 @@ header {
   box-sizing: border-box;
 }
 
-/* Ensure the main content area takes up the remaining space */
 main {
   flex: 1;
-  padding: 80px 20px 20px; /* Add padding-top to account for the fixed header */
+  padding: 80px 20px 20px;
   overflow-y: auto;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Ensure the body and html take up the full height */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -33,24 +30,24 @@ html, body, #root {
 }
 
 .banned-users-container {
-  max-width: 1200px; /* Adjust the max-width as needed */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-  gap: 20px; /* Space between tiles */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 @media (max-width: 1024px) {
   .banned-users-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout for medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .banned-users-container {
-    grid-template-columns: 1fr; /* 1 column layout for small screens */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -60,7 +57,7 @@ html, body, #root {
   padding: 10px;
   background-color: #444444;
   box-sizing: border-box;
-  width: 100%; /* Ensure tiles take up the full width of the container */
+  width: 100%;
 }
 
 .banned-user-tile p {
@@ -70,47 +67,47 @@ html, body, #root {
 
 
 .banned-user-tile .username {
-  font-size: 25px; /* Larger font size for the username */
+  font-size: 25px;
   font-weight: bold;
 }
 
 .banned-user-tile .ban-duration {
-  font-size: 12px; /* Smaller font size for the ban duration */
-  background: #333333; /* Dark background */
-  color: #ffffff; /* Light text color */
+  font-size: 12px;
+  background: #333333;
+  color: #ffffff;
   border-radius: 15px;
   padding: 10px;
-  display: inline-block; /* Ensure it wraps around the text */
+  display: inline-block;
   margin: 5px 0;
-  border: #ffffff 2px ridge; /* Light border color */
+  border: #ffffff 2px ridge;
 }
 
 .banned-user-tile .banned-at {
-  font-size: 12px; /* Smaller font size for the date */
-  margin-top: auto; /* Push the date to the bottom */
-  color: #cccccc; /* Light text color */
+  font-size: 12px;
+  margin-top: auto;
+  color: #cccccc;
 }
 
 .banned-user-messages {
   margin-top: 5px;
-  border-radius: 15px; /* Add border-radius to make the window more rounded */
-  padding: 5px; /* Optional: Add padding for better spacing */
-  background-color: #1a1a1a; /* Dark background color */
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #1a1a1a;
   margin-bottom: 15px;
 }
 
 .banned-user-messages ul {
   font-size: 16px;
   box-sizing: border-box;
-  color: #ffffff; /* Light text color */
+  color: #ffffff;
   margin: 10px 0;
 }
 
 .banned-user-messages li {
-  color: #ffffff; /* Light text color */
+  color: #ffffff;
   list-style-type: none; 
   font-size: 16px;
-  background: #444444; /* Dark background for list items */
+  background: #444444;
   border-radius: 15px;
   margin: 5px 0;
   padding: 5px;
@@ -119,11 +116,11 @@ html, body, #root {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  color: #ffffff; /* Light text color */
-  background-color: #333333; /* Dark background color */
+  color: #ffffff;
+  background-color: #333333;
   border-radius: 15px;
   cursor: pointer;
   margin: 5px;
   box-sizing: border-box;
-  border: 2px solid #ffffff; /* Light border color */
+  border: 2px solid #ffffff;
 }

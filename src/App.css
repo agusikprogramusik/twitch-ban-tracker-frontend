@@ -1,6 +1,5 @@
-/* Ensure the header has a fixed height and is styled appropriately */
 header {
-  height: 60px; /* Adjust the height as needed */
+  height: 60px;
   background-color: #282c34;
   display: flex;
   align-items: center;
@@ -14,15 +13,13 @@ header {
   z-index: 1000;
 }
 
-/* Ensure the main content area takes up the remaining space */
 main {
   flex: 1;
-  padding: 80px 20px 20px; /* Add padding-top to account for the fixed header */
+  padding: 80px 20px 20px;
   overflow-y: auto;
   width: 100%;
 }
 
-/* Ensure the body and html take up the full height */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -30,7 +27,6 @@ html, body, #root {
   flex-direction: column;
 }
 
-/* Existing styles */
 .App {
   min-height: 100vh;
   display: flex;
@@ -38,8 +34,8 @@ html, body, #root {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255); /* Change text color to white for better contrast */
-  background-color: #121212; /* Set a dark background color */
+  color: rgb(255, 255, 255);
+  background-color: #121212;
 }
 
 input {
